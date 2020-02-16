@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 父工程模块 -->
+    <parent>
+        <groupId>com.aaron</groupId>
+        <artifactId>shoppingproject</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>com.aaron</groupId>
+    <artifactId>shoppingserviceimpl</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>ShoppingServiceImpl</name>
+    <description>ShoppingServiceImpl</description>
+
+    <!-- 子工程 -->
+    <modules>
+        <module>shoppingserviceimplwechat</module>
+        <module>shoppingserviceimplmember</module>
+    </modules>
+
+    <dependencies>
+        <!-- springcloud feign组件 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
+</project>
