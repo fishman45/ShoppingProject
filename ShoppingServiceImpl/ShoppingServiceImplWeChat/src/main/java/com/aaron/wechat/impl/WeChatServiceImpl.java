@@ -2,6 +2,7 @@ package com.aaron.wechat.impl;
 
 import com.aaron.wechatentity.WeChatEntity;
 import com.aaron.wechatservice.WeChatService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WeChatServiceImpl implements WeChatService {
 
+    @Value("${WeChatService.name}")
+    private String Name;
+
     @Override
     public WeChatEntity getWeChat() {
-        return new WeChatEntity("123","李飞龙");
+        return new WeChatEntity("13710864544",Name);
     }
 }
