@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Slf4j
-public class ApolloRunner implements CommandLineRunner {
+public class ShoppingZuulRunner implements CommandLineRunner {
 
     @ApolloConfig
     private Config config;
